@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>All Blog Posts</h1>
+        <form method='POST'>
+            <label>Title of Blog:
+                <input type='text' name='title' required value={{title}}/>
+            </label>
+            <br>
+            <br>
+            <label> Body:
+                <input type='text' name='body' required value={{body}}/>
+            </label>
+            <input type='Submit' value='Add Blog Post' />
+        </form>    
+{% endblock %}
